@@ -20,7 +20,7 @@ const AppStoreButtons = () => {
           className="relative h-auto"
         />
       </motion.a>
-      <motion.a
+      {/* <motion.a
         href="#"
         whileHover={{ scale: 1.05, y: -2 }}
         whileTap={{ scale: 0.95 }}
@@ -34,7 +34,7 @@ const AppStoreButtons = () => {
           height={60}
           className="relative h-auto"
         />
-      </motion.a>
+      </motion.a> */}
     </div>
   )
 }

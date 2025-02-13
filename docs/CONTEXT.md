@@ -1,161 +1,113 @@
 # PetPortrait Landing Page Specification
 
 ## Project Overview
-A modern, engaging landing page for PetPortrait - an AI-powered mobile app that helps pet owners capture perfect photos of their furry friends. The landing page will focus on communicating core value propositions and driving app downloads.
+PetPortrait is an AI-powered app that makes capturing perfect pet photos effortless. The landing page should feel modern, playful, and tech-forward while being instantly understandable.
 
-## Technical Stack
+## Tech Stack
 - Next.js 14 with App Router
-- Tailwind CSS for styling
-- Framer Motion for animations
-- TypeScript for type safety
-- Vercel for deployment
+- Tailwind CSS + Framer Motion
+- TypeScript
+- Vercel Edge Network
+
+## Design Philosophy
+- Clean, airy layouts with plenty of whitespace
+- Smooth, subtle animations that feel natural
+- Mobile-first, responsive design
+- Modern gradient accents and glass-morphism effects
 
 ## Core Sections
 
 ### Hero Section
-- Eye-catching hero image featuring a pet owner using the app
-- Clear value proposition headline
-- App store and Play store download buttons
-- Background animation/gradient
-- Optional: Short demo video
+Modern, minimal hero with:
+- Split-screen layout
+- Left: Value prop + CTA
+- Right: Floating device mockup with live demo
+- Subtle background gradient animation
+- Prominent download buttons
 
-### Problem/Solution Section
-Pain points addressed:
-- Difficulty getting pet's attention
-- Missed perfect moments
-- Time spent on captions and hashtags
-- Limited sound options for pet attention
+### Key Features (3-Step Story)
+1. **Point & Shoot** 
+   - AI automatically detects perfect moments
+   - No more missed shots or blurry photos
+   - Visual demo of AI detection in action
 
-Solutions showcased:
-- AI-powered pet detection
-- Smart sound system
-- Automatic caption generation
-- Custom sound marketplace
+2. **Get Attention**
+   - Smart sound system plays pet-specific noises
+   - Built-in treat tracker animation
+   - Library of proven attention-getters
 
-### Feature Highlights
-Three main features with icons and animations:
-1. Perfect Shot Timing
-   - AI detection visualization
-   - Example perfect vs regular shots
-   
-2. Smart Sound System
-   - Sound wave animation
-   - Preview of sound collection interface
-   
-3. Social Ready
-   - Instagram-style post mockups
-   - Generated caption examples
+3. **Share & Grow**
+   - One-tap sharing to social
+   - AI generates engaging captions
+   - Tracks your pet's growth over time
 
 ### Social Proof
-- User testimonials with pet photos
-- Download/rating statistics
-- Featured on section (pet blogs/media)
+Modern testimonial display:
+- Grid of success stories
+- Before/after photo comparisons
+- Live download counter
+- App store ratings widget
 
-### Download CTA
-- Prominent app store buttons
-- QR code for direct download
-- Device mockups with app screenshots
+### Final CTA
+Clean call-to-action with:
+- Floating device mockups
+- QR code for instant download
+- Animation showing key features
+- Trust badges and guarantees
 
-## Component Structure
+## Visual Language
 
-```typescript
-interface LandingPageComponents {
-  // Main sections
-  Hero: React.FC
-  ProblemSolution: React.FC
-  Features: React.FC
-  Testimonials: React.FC
-  DownloadCTA: React.FC
-  
-  // Reusable components
-  AppStoreButtons: React.FC
-  FeatureCard: React.FC<{
-    title: string
-    description: string
-    icon: React.ReactNode
-    image: string
-  }>
-  TestimonialCard: React.FC<{
-    quote: string
-    author: string
-    petPhoto: string
-  }>
-}
+### Colors
+```css
+/* Modern, friendly palette */
+--primary: #6366F1    /* Indigo */
+--secondary: #10B981  /* Emerald */
+--accent: #F59E0B     /* Amber */
+--surface: #F8FAFC    /* Slate 50 */
+--text: #1E293B       /* Slate 800 */
 ```
 
-## Animation Strategy
-- Scroll-triggered animations for sections
-- Subtle hover effects on interactive elements
-- Loading animations for images
-- Smooth transitions between sections
-
-## Mobile Responsiveness
-- Mobile-first approach
-- Optimized images for different screen sizes
-- Adapted layouts for tablet/mobile
-- Touch-friendly interactions
-
-## Performance Goals
-- Lighthouse score > 90
-- First contentful paint < 1.5s
-- Time to interactive < 2s
-- Core Web Vitals optimization
-
-## SEO Requirements
-- Meta tags optimization
-- Open Graph tags for social sharing
-- Structured data for rich results
-- Sitemap generation
-- Alt text for all images
-
-## Content Strategy
-Short, impactful copy focusing on:
-- Emotional connection with pet owners
-- Clear problem-solution statements
-- Social proof and trust building
-- Clear calls to action
-
-## Design Guidelines
-Colors:
-- Primary: #4F46E5 (Indigo)
-- Secondary: #10B981 (Emerald)
-- Accent: #F59E0B (Amber)
-- Background: Linear gradients
-
-Typography:
-- Headings: Inter
+### Typography
+- Headlines: Inter (Bold)
 - Body: SF Pro Display
-- Proper hierarchy and contrast
+- Features: Clear hierarchy with size contrast
 
-## Tracking
-- Download button clicks
-- Section visibility
-- Scroll depth
-- Device types
-- Traffic sources
+### UI Elements
+- Floating cards with subtle shadows
+- Glass-morphism effects on CTAs
+- Micro-interactions on hover
+- Progress indicators and loaders
 
-## Development Phases
+## Key Metrics to Track
+- Time to first interaction
+- Feature section visibility
+- Download funnel progression
+- Device/platform analytics
 
-### Phase 1: Foundation
-- [ ] Next.js project setup
-- [ ] Component architecture
-- [ ] Basic responsive layout
-- [ ] Typography and color system
+## Development Priorities
 
-### Phase 2: Core Sections
-- [ ] Hero section
-- [ ] Problem/Solution blocks
-- [ ] Feature highlights
-- [ ] Download CTA
+### Phase 1: Core Experience
+- [x] Responsive layout structure  
+- [x] Basic animations
+- [x] Critical user paths
+
+### Phase 2: Engagement
+- [ ] Interactive demos
+- [ ] Smooth transitions
+- [ ] Loading states
 
 ### Phase 3: Polish
-- [ ] Animations
 - [ ] Performance optimization
-- [ ] SEO implementation
+- [ ] A11y improvements
 - [ ] Analytics integration
 
 ### Phase 4: Launch
-- [ ] Testing across devices
-- [ ] Content refinement
-- [ ] Deployment
+- [ ] Final testing
+- [ ] SEO optimization
 - [ ] Monitoring setup
+
+## Success Metrics
+- Sub-2s load time
+- >50% scroll depth
+- >30% CTA engagement
+- >90 Lighthouse score

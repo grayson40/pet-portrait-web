@@ -12,19 +12,19 @@ const features = [
     title: "Perfect Shot Timing",
     description: "AI-powered detection ensures you capture the perfect moment every time.",
     icon: <CameraIcon />,
-    image: "/feature-perfect-shot.jpg"
+    image: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=80" // Dog looking at camera
   },
   {
     title: "Smart Sound System",
     description: "Grab your pet's attention with our collection of proven attention-getting sounds.",
     icon: <SpeakerWaveIcon />,
-    image: "/feature-sound-system.jpg"
+    image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80" // Cat with perked ears
   },
   {
     title: "Social Ready",
     description: "Auto-generated captions and hashtags make sharing a breeze.",
     icon: <ShareIcon />,
-    image: "/feature-social.jpg"
+    image: "https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=800&q=80" // Instagram-style pet photo
   }
 ]
 

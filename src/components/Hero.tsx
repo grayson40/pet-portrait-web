@@ -47,13 +47,13 @@ const Hero = () => {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           >
             <div className="relative w-full h-full">
-              <Image
+              {/* <Image
                 src="/device-mockup.png"
                 alt="PetPortrait app interface"
                 fill
                 className="object-contain drop-shadow-2xl"
                 priority
-              />
+              /> */}
               {/* Live demo overlay */}
               <div className="absolute inset-[12%] rounded-[32px] overflow-hidden">
                 <Image

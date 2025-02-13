@@ -6,17 +6,17 @@ const testimonials = [
   {
     quote: "Finally got that perfect shot of my hyperactive puppy! The smart sound feature is a game-changer.",
     author: "Sarah Johnson",
-    petPhoto: "/testimonial-1.jpg"
+    petPhoto: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80"
   },
   {
     quote: "The AI detection is incredible. Captures the exact moment my cat looks at the camera!",
     author: "Mike Chen",
-    petPhoto: "/testimonial-2.jpg"
+    petPhoto: "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?auto=format&fit=crop&w=800&q=80"
   },
   {
     quote: "Love how it generates Instagram captions. Saves me so much time sharing photos of my pets.",
     author: "Emma Rodriguez",
-    petPhoto: "/testimonial-3.jpg"
+    petPhoto: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800&q=80"
   }
 ]
 
