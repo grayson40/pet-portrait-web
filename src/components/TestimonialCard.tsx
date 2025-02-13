@@ -24,7 +24,7 @@ const TestimonialCard = ({ quote, author, petPhoto }: TestimonialCardProps) => {
           className="object-cover"
         />
       </div>
-      <p className="text-gray-600 italic mb-4">"{quote}"</p>
+      <p className="text-gray-600 italic mb-4">&ldquo;{quote}&rdquo;</p>
       <p className="text-gray-900 font-semibold">{author}</p>
     </motion.div>
   )
